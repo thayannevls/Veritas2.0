@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySql"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySql"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcprov-jdk15on-152.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bridj-0.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/core-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/webcam-capture-0.3.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/zxing-javase.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

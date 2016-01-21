@@ -4,11 +4,25 @@
 
 package product;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="PRODUCT")
 public class Product {
-	private String id;
-	private String name;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private String  id;
+	@Column
+	private String  name;
+	@Column
 	private boolean valid;
-	private String description;
+	@Column
+	private String  description;
 	
 	public Product(String id){
 		setId(id);
