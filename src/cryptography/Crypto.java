@@ -17,7 +17,7 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 
-import keys.PersistenceKeys;
+import keys.Keys;
 import convert.Convert;
 
 /**
@@ -39,7 +39,7 @@ public class Crypto {
 	public Crypto() throws Exception {
 	    Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 	    cipher = Cipher.getInstance(RSA, BC);
-	    KeyPair keys = PersistenceKeys.loadKeys();
+	    KeyPair keys = Keys.loadKeys();
 	    setPK(keys.getPrivate());
 	    setPU(keys.getPublic());
 	    
