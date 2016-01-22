@@ -1,4 +1,4 @@
-package employee;
+package client;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import user.User;
 
 @Entity
-@Table(name="EMPLOYEE")
-public class Employee extends User{
-
+@Table(name="CLIENT")
+public class Client extends User{
+	
 }

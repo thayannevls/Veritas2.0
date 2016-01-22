@@ -10,10 +10,10 @@ import javax.persistence.Query;
 
 import org.hibernate.Session;
 
-import person.Person;
+import user.User;
 //CRUD OF USER CLASS
 //ONLY THE MANAGER CAN CRUD USERS
-public class PersistencePerson {
+public class PersistenceUser {
 	
 	protected EntityManager em; 
     private EntityManager getEntityManager() {
@@ -25,13 +25,13 @@ public class PersistencePerson {
         return em;
     }
     
-    public PersistencePerson() {
+    public PersistenceUser() {
         this.em = getEntityManager();
     }
     
     //INSERT
     
-    public void persist(Person p) {
+    public void persist(User p) {
         try {
             em.getTransaction().begin();
             em.persist(p);
@@ -44,8 +44,8 @@ public class PersistencePerson {
     
     //SELECT
     
-    public Person selectById(final int id) {
-        return em.find(Person.class, id);
+    public User selectById(final int id) {
+        return em.find(User.class, id);
     }
     
     //UPDATE
@@ -54,7 +54,7 @@ public class PersistencePerson {
         Scanner l = new Scanner(System.in);
     	try{
             em.getTransaction().begin();
-            Person p = selectById(id);
+            User p = selectById(id);
             //---------------------------------------------------------------
             //Temporary update 
             System.out.println("New name: ");
@@ -74,7 +74,7 @@ public class PersistencePerson {
     
     public void removeById(final int id) {
         try {
-            Person p = selectById(id);
+            User p = selectById(id);
             em.remove(p);
         } catch (Exception ex) {
             ex.printStackTrace();
