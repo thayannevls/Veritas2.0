@@ -36,4 +36,12 @@ public class Person {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
+	//-----------------------------------------------------------------------------------
+	//Temporary method to String
+	public String toString() {
+		return "ID: " + getId() + "\n NAME: " + getName() + "\n PASSWORD: " + getPasswd();
+	}
+	//-----------------------------------------------------------------------------------
+	
+	
 }
