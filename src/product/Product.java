@@ -1,7 +1,3 @@
-/**
- * Class
- */
-
 package product;
 
 import javax.persistence.Column;
@@ -11,12 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.validator.NotNull;
+
 @Entity
 @Table(name="PRODUCT")
 public class Product {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private String  id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 	@Column
 	private String  name;
 	@Column
@@ -24,16 +22,10 @@ public class Product {
 	@Column
 	private String  description;
 	
-	public Product(String id){
-		setId(id);
-	}
-	
-	
-	
-	public String getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	
@@ -44,23 +36,23 @@ public class Product {
 		this.name = name;
 	}
 	
-	public boolean isValid() {
+	public boolean getValid() {
 		return valid;
 	}
 	public void setValid(boolean valid) {
 		this.valid = valid;
 	}
-
-
-
 	public String getDescription() {
 		return description;
 	}
 
-
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
+	//-----------------------------------------------------------------------------------
+	//Temporary method to String
+	public String toString() {
+		return " ID: " + id + "\n NAME: " + getName() + "\n VALID: " + getValid() + "\n DESCRIPTION" + getDescription();
+	}
+	//-----------------------------------------------------------------------------------
 }

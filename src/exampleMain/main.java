@@ -1,21 +1,18 @@
 package exampleMain;
 
 import java.util.List;
-
-import client.Client;
+import persistence.PersistenceProduct;
 import persistence.PersistenceUser;
 import qrCode.QRCode;
 import user.User;
+import product.Product;
 
 public class main {
 	public static void main(String[] args){
+		Product p = new Product();
+		PersistenceProduct pP = new PersistenceProduct();
 		
-		PersistenceUser pC = new PersistenceUser();
-		//pC.persist(p1);
-		//pC.persist(p2);
-		//pC.persist(p3);
-		
-		System.out.println(pC.selectById(3).toString());
+		System.out.println(pP.selectById(2).toString());
 		
 	}
 

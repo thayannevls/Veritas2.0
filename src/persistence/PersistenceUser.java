@@ -1,14 +1,11 @@
 package persistence;
 
-import java.util.List;
 import java.util.Scanner;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 
-import org.hibernate.Session;
 
 import user.User;
 //CRUD OF USER CLASS
@@ -51,7 +48,8 @@ public class PersistenceUser {
     //UPDATE
     
     public void merge(final int id) {
-        Scanner l = new Scanner(System.in);
+        @SuppressWarnings("resource")
+		Scanner l = new Scanner(System.in);
     	try{
             em.getTransaction().begin();
             User p = selectById(id);

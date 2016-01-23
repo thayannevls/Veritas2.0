@@ -8,11 +8,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="PERSON")
+@Table(name="USER")
 public class User {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 	@Column
 	private String name;
 	@Column
@@ -42,6 +42,6 @@ public class User {
 		return "ID: " + getId() + "\n NAME: " + getName() + "\n PASSWORD: " + getPasswd();
 	}
 	//-----------------------------------------------------------------------------------
-	
+
 	
 }
