@@ -1,11 +1,7 @@
 package reader;
 import java.awt.image.BufferedImage;
 
-import javax.swing.JFrame;
-
 import com.github.sarxos.webcam.Webcam;
-import com.github.sarxos.webcam.WebcamPanel;
-import com.github.sarxos.webcam.WebcamResolution;
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.LuminanceSource;
 import com.google.zxing.MultiFormatReader;

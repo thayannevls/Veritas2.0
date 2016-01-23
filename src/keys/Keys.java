@@ -20,13 +20,6 @@ import java.security.spec.X509EncodedKeySpec;
 
 public class Keys {
 	private static final String path = "/users/thayanneLuiza/Documents/Veritas/";
-	private final String RSA = "RSA/ECB/PKCS1Padding";
-	private final String BC = "BC";
-	
-
-	
-	
-
 	
 	/**
 	 * Builder default. Using algorithm RSA and PKCS1 padding for generate keys.

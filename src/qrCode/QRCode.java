@@ -15,6 +15,7 @@ import javax.imageio.ImageIO;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.BinaryBitmap;
+import com.google.zxing.DecodeHintType;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatReader;
 import com.google.zxing.NotFoundException;
@@ -74,7 +75,7 @@ public class QRCode {
 	
 	}
 	
-	 public  String read( String charset, Map hintMap)
+	 public  String read( String charset, Map<DecodeHintType, ?> hintMap)
 		throws FileNotFoundException, IOException, NotFoundException {
 		BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(
 		new BufferedImageLuminanceSource(
