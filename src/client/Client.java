@@ -7,6 +7,10 @@ import user.User;
 
 @Entity
 @Table(name="CLIENT")
+
+/**
+ * User class
+ **/
 public class Client extends User{
 	
 }
