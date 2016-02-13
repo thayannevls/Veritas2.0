@@ -9,6 +9,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="USER")
+
+/**
+ * This is a superclass with basic attributes for clients and workers.
+ * @author thayannevls & eddieKaleb
+ *
+ */
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

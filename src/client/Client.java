@@ -9,7 +9,8 @@ import user.User;
 @Table(name="CLIENT")
 
 /**
- * User class
+ * This class refers to the clients of the system
+ * @author thayannevls & eddieKaleb
  **/
 public class Client extends User{
 	
