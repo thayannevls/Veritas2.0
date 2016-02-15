@@ -10,5 +10,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-1.7.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/webcam-capture-0.3.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/zxing-javase.jar"/>
+	<classpathentry kind="lib" path="lib/javax.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

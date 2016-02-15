@@ -1,4 +1,4 @@
-package VeritasUI;
+package veritasUI;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

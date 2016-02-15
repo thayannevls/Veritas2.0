@@ -27,7 +27,7 @@ public class PersistenceProduct {
     
     //INSERT
     
-    public void persist(Product p) {
+    public static void persist(Product p) {
         try {
             em.getTransaction().begin();
             em.persist(p);

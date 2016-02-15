@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="82.0" layoutY="11.0" prefHeight="118.0" prefWidth="455.0" style="-fx-font-size: 30;" text="Product submited with sucess!" textFill="WHITE" />
+      <ImageView fitHeight="103.0" fitWidth="169.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="14.0" layoutY="45.0">
+         <image>
+            <Image url="@v-300.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

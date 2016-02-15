@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="801.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VeritasUI.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="801.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="veritasUI.Controller">
    <children>
       <Label layoutX="42.0" layoutY="195.0" prefHeight="36.0" prefWidth="95.0" style="-fx-font-size: 18;" text="Name" textFill="WHITE" />
       <TextField id="nameProduct" fx:id="nameProduct" layoutX="98.0" layoutY="200.0">
@@ -33,7 +33,7 @@
             <InnerShadow color="#00cccc" />
          </effect>
       </Separator>
-      <Button layoutX="615.0" layoutY="461.0" mnemonicParsing="false" onAction="#buttonSubmitProduct" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #00cccc; -fx-border-color: #66cccc; -fx-background-radius: 2; -fx-text-fill: #33333; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Submit New Product">
+      <Button fx:id="submitButton" layoutX="615.0" layoutY="461.0" mnemonicParsing="false" onAction="#buttonSubmitProduct" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #00cccc; -fx-border-color: #66cccc; -fx-text-fill: #33333; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Submit New Product">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
