@@ -38,6 +38,6 @@
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Label layoutX="28.0" layoutY="33.0" prefHeight="61.0" prefWidth="206.0" style="-fx-text-fill: #00cccc; -fx-font-size: 60; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Veritas" />
-      <Button cancelButton="true" layoutX="523.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: #333333; -fx-text-fill: #00cccc; -fx-font-size: 15;" text="Cancel" />
+      <Button fx:id="cancelButton" cancelButton="true" layoutX="523.0" layoutY="468.0" mnemonicParsing="false" onAction="#buttonCancel" style="-fx-background-color: #333333; -fx-text-fill: #00cccc; -fx-font-size: 15;" text="Cancel" />
    </children>
 </AnchorPane>
