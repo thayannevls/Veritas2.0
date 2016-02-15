@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="801.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VeritasUI.Controller">
+   <children>
+      <Label layoutX="42.0" layoutY="195.0" prefHeight="36.0" prefWidth="95.0" style="-fx-font-size: 18;" text="Name" textFill="WHITE" />
+      <TextField id="nameProduct" fx:id="nameProduct" layoutX="98.0" layoutY="200.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="idProduct" layoutX="98.0" layoutY="238.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="descriptionProduct" alignment="TOP_LEFT" layoutX="401.0" layoutY="200.0" prefHeight="201.0" prefWidth="359.0" promptText="Describe the product">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label layoutX="59.0" layoutY="240.0" style="-fx-font-size: 18;" text="ID" textFill="WHITE" />
+      <Label layoutX="294.0" layoutY="195.0" prefHeight="36.0" prefWidth="95.0" style="-fx-font-size: 18;" text="Description" textFill="#e8e8e8">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="120.0" prefHeight="16.0" prefWidth="801.0">
+         <effect>
+            <InnerShadow color="#00cccc" />
+         </effect>
+      </Separator>
+      <Button layoutX="615.0" layoutY="461.0" mnemonicParsing="false" onAction="#buttonSubmitProduct" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #00cccc; -fx-border-color: #66cccc; -fx-background-radius: 2; -fx-text-fill: #33333; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Submit New Product">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="28.0" layoutY="33.0" prefHeight="61.0" prefWidth="206.0" style="-fx-text-fill: #00cccc; -fx-font-size: 60; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Veritas" />
+      <Button cancelButton="true" layoutX="523.0" layoutY="468.0" mnemonicParsing="false" style="-fx-background-color: #333333; -fx-text-fill: #00cccc; -fx-font-size: 15;" text="Cancel" />
+   </children>
+</AnchorPane>
