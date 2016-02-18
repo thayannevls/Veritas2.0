@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="veritasUI.AddProductFXMLController">
+  <children>
+    <Label layoutX="98.0" layoutY="136.0" prefHeight="36.0" prefWidth="95.0" style="-fx-font-size: 18;" text="Name" textFill="WHITE" />
+    <TextField id="nameProduct" fx:id="txtNameProduct" layoutX="98.0" layoutY="172.0" />
+    <TextField id="descriptionProduct" fx:id="txtDescriptionProduct" alignment="TOP_LEFT" layoutX="98.0" layoutY="250.0" prefHeight="201.0" prefWidth="359.0" promptText="Describe the product" />
+    <Label layoutX="98.0" layoutY="201.0" prefHeight="36.0" prefWidth="95.0" style="-fx-font-size: 18;" text="Description" textFill="#e8e8e8">
+      <font>
+        <Font name="System Bold Italic" size="18.0" />
+      </font>
+    </Label>
+    <Separator layoutY="120.0" prefHeight="16.0" prefWidth="801.0">
+      <effect>
+        <InnerShadow color="#00cccc" />
+      </effect>
+    </Separator>
+    <Button id="submitButton" fx:id="btSubmit" layoutX="615.0" layoutY="415.0" mnemonicParsing="false" onAction="#buttonSubmitProduct" prefHeight="36.0" prefWidth="149.0" style="-fx-background-color: #00cccc; -fx-border-color: #66cccc; -fx-text-fill: #33333; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Submit New Product" />
+    <Label layoutX="28.0" layoutY="33.0" prefHeight="73.0" prefWidth="576.0" style="-fx-text-fill: #00cccc; -fx-font-size: 60; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Veritas " />
+    <Button id="cancelButton" fx:id="btCancelAddProduct" cancelButton="true" layoutX="523.0" layoutY="424.0" mnemonicParsing="false" onAction="#buttonCancelAddProduct" style="-fx-background-color: #333333; -fx-text-fill: #00cccc; -fx-font-size: 15;" text="Cancel" />
+  </children>
+</AnchorPane>

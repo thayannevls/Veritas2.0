@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="veritasUI.VeritasMenuFXMLController">
+  <children>
+    <Separator layoutY="120.0" prefHeight="16.0" prefWidth="801.0">
+      <effect>
+        <InnerShadow color="#00cccc" />
+      </effect>
+    </Separator>
+    <Label layoutX="28.0" layoutY="33.0" prefHeight="61.0" prefWidth="206.0" style="-fx-text-fill: #00cccc; -fx-font-size: 60; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Veritas" />
+    <Button fx:id="btAddProduct" layoutX="182.0" layoutY="170.0" mnemonicParsing="false" onAction="#buttonAddProduct" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #00cccc;" text="Add New Product" />
+    <Button fx:id="btSeeAllProducts" layoutX="466.0" layoutY="170.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #00cccc;" text="See All Products" />
+    <Button id="btAddProduct" layoutX="181.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #00cccc;" text="" />
+    <Button id="btAddProduct" layoutX="466.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #00cccc;" text="" />
+    <Button id="btAddProduct" layoutX="181.0" layoutY="352.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #00cccc;" text="" />
+    <Button id="btAddProduct" layoutX="466.0" layoutY="352.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #00cccc;" text="" />
+  </children>
+</AnchorPane>

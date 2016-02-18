@@ -1,18 +1,30 @@
 package veritasUI;
 
+import java.io.IOException;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+
+public class Main extends Application{
 	
+	public static Stage primaryStage;
+	public static Object stage;
+	
+	@Override
 	public void start(Stage primaryStage) throws Exception{
 		
-		Parent root = FXMLLoader.load(getClass().getResource("VeritasProduct.fxml"));
+		this.primaryStage = primaryStage;
+		
+		Parent root = FXMLLoader.load(getClass().getResource("LoginScreen.fxml"));
+		
+		Scene scene1 = new Scene(root);
+		
 		primaryStage.setTitle("Veritas");
-		primaryStage.setScene(new Scene(root, 801, 589));
+		primaryStage.setScene(scene1);
 		primaryStage.show();
 
 	}

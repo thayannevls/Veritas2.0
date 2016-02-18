@@ -11,7 +11,7 @@ import product.Product;
 //CRUD OF PRODUCT
 public class PersistenceProduct {
 	
-	protected EntityManager em; 
+	protected static EntityManager em; 
     private EntityManager getEntityManager() {
         EntityManagerFactory factory = Persistence
                 .createEntityManagerFactory("eddie");
@@ -27,7 +27,7 @@ public class PersistenceProduct {
     
     //INSERT
     
-    public static void persist(Product p) {
+    public void persist(Product p) {
         try {
             em.getTransaction().begin();
             em.persist(p);

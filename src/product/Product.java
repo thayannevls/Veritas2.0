@@ -21,8 +21,7 @@ public class Product {
 	@Column
 	private String  description;
 	
-	public Product(int id, String name, String description){
-		setId(id);
+	public Product(String name, String description){
 		setName(name);
 		setDescription(description);
 		setValid(true);
