@@ -6,8 +6,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-
-import product.Product;
+import veritas.domain.Product;
 //CRUD OF PRODUCT
 public class PersistenceProduct {
 	

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #333333; -fx-border-color: #00cccc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Separator layoutY="120.0" prefHeight="16.0" prefWidth="801.0">
+      <effect>
+        <InnerShadow color="#00cccc" />
+      </effect>
+    </Separator>
+    <Label layoutX="28.0" layoutY="33.0" prefHeight="61.0" prefWidth="206.0" style="-fx-text-fill: #00cccc; -fx-font-size: 60; -fx-font-family: Tahoma, Geneva, sans-serif;" text="Veritas" />
+    <Button fx:id="btAddProduct" layoutX="181.0" layoutY="235.0" mnemonicParsing="false" onAction="#buttonAddProduct" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #00cccc;" text="Add New Product" />
+    <Button layoutX="34.0" layoutY="435.0" mnemonicParsing="false" onAction="#buttonBackProduct" prefHeight="35.0" prefWidth="86.0" style="-fx-background-color: #00cccc;" text="Back" />
+    <Button layoutX="466.0" layoutY="235.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #00cccc;" text="See All Products" />
+  </children>
+</AnchorPane>

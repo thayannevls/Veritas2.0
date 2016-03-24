@@ -10,6 +10,9 @@
 	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-1.7.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/webcam-capture-0.3.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/zxing-javase.jar"/>
-	<classpathentry kind="lib" path="lib/javax.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.jar"/>
+	<classpathentry exported="true" kind="lib" path="/Users/thayanneLuiza/git/Veritas2.0/lib/javax.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hibernate3-3.3.1.jar.zip"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.jar.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

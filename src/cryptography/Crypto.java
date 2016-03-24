@@ -12,8 +12,8 @@ import java.security.Security;
 
 import javax.crypto.Cipher;
 
-import keys.Keys;
 import convert.Convert;
+import veritas.domain.Keys;
 
 /**
  * This class has methods to encrypt and decrypt.
